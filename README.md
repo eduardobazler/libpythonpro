@@ -5,6 +5,8 @@ Nesse curso é ensidado como contribuir comprojetos de código aberto.
 
 Link do curso [Python Pro](https://pythonpro.com.br/)
 
+[![Build Status](https://travis-ci.com/eduardobazler/libpythonpro.svg?branch=main)](https://travis-ci.com/eduardobazler/libpythonpro)
+
 Suportada aversão de Python3
 
 Para instalar: 
