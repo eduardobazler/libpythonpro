@@ -9,6 +9,7 @@ Link do curso [Python Pro](https://pythonpro.com.br/)
 [![Updates](https://pyup.io/repos/github/eduardobazler/libpythonpro/shield.svg)](https://pyup.io/repos/github/eduardobazler/libpythonpro/)
 [![Python 3](https://pyup.io/repos/github/eduardobazler/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/eduardobazler/libpythonpro/)
 [![codecov](https://codecov.io/gh/eduardobazler/libpythonpro/branch/main/graph/badge.svg?token=TQ0UZ31OOR)](https://codecov.io/gh/eduardobazler/libpythonpro)
+
 Suportada aversão de Python3
 
 Para instalar: 
