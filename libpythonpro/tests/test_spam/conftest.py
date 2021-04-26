@@ -3,7 +3,7 @@ import pytest
 from libpythonpro.spam.db import Conexao
 
 
-@pytest.fixture(scope='session') #foi feita somente nesse modulo e não para cada função
+@pytest.fixture(scope='session')
 def conexao():
     conexao_obj = Conexao()
     yield conexao_obj

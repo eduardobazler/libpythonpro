@@ -12,9 +12,8 @@ def test_criar_enviador_de_email():
     'destinatario',
     ['eduardo.bazler@unesp.br', 'foo@bar.com.br']
 )
-def test_remetente(destinatario):  #utiliza o parametro destinatio pra ada elemento da lista à cima
+def test_remetente(destinatario):
     enviador = Enviador()
-
     resultado = enviador.enviar(
         destinatario,
         'edubazler@gmail.com',
@@ -28,7 +27,7 @@ def test_remetente(destinatario):  #utiliza o parametro destinatio pra ada eleme
     'remetente',
     ['eduardo.bazler_unesp.br', '']
 )
-def test_remetente_invado(remetente):  #utiliza o parametro destinatio pra ada elemento da lista à cima
+def test_remetente_invado(remetente):
     enviador = Enviador()
     with pytest.raises(EmailInvalido):
         enviador.enviar(
@@ -37,4 +36,3 @@ def test_remetente_invado(remetente):  #utiliza o parametro destinatio pra ada e
             'Cursos Python Pro',
             'Turmas abertas'
         )
-

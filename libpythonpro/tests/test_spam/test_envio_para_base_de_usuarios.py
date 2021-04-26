@@ -1,24 +1,20 @@
 from unittest.mock import Mock
-
 import pytest
-
-from libpythonpro.spam.enviador_de_email import Enviador
 from libpythonpro.spam.main import EnviadorDeSpam
 from libpythonpro.spam.moedelos import Usuario
 
 
 @pytest.mark.parametrize('usuarios',
-
-    [
-        [
-            Usuario(nome='Eduardo', email= 'eduardo.bazler@unesp.br'),
-            Usuario(nome='Renzo', email= 'eduardo.bazler@unesp.br')
-        ],
-        [
-            Usuario(nome='Eduardo', email= 'eduardo.bazler@unesp.br')
-        ]
-    ]
-)
+                         [
+                             [
+                                 Usuario(nome='Eduardo', email='eduardo.bazler@unesp.br'),
+                                 Usuario(nome='Renzo', email='eduardo.bazler@unesp.br')
+                             ],
+                             [
+                                 Usuario(nome='Eduardo', email='eduardo.bazler@unesp.br')
+                             ]
+                         ]
+                         )
 def test_qde_de_spam(sessao, usuarios):
     for usuario in usuarios:
         sessao.salvar(usuario)
